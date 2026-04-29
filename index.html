@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraDrive | Location 4x4 de Prestige</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Terra<span>Drive</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#cars">Nos Véhicules</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Dominez tous les terrains</h1>
+            <p>Location de 4x4 légendaires pour vos aventures les plus extrêmes.</p>
+            <a href="#cars" class="btn">Voir la flotte</a>
+        </div>
+    </section>
+
+    <section class="cars" id="cars">
+        <h2 class="section-title">Notre Flotte Sélectionnée</h2>
+        <div class="car-grid">
+            
+            <div class="car-card">
+                <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="car-info">
+                    <h3>Hyundai Galloper</h3>
+                    <p>Le baroudeur infatigable, idéal pour les budgets maîtrisés sans compromis.</p>
+                    <span class="price">45€ / Jour</span>
+                    <button class="btn-select" onclick="openModal('Hyundai Galloper')">Réserver</button>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="car-info">
+                    <h3>Mitsubishi Pajero</h3>
+                    <p>Équilibre parfait entre confort sur route et capacités hors-piste.</p>
+                    <span class="price">60€ / Jour</span>
+                    <button class="btn-select" onclick="openModal('Mitsubishi Pajero')">Réserver</button>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1594960951302-7634f31c9a62?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="car-info">
+                    <h3>Nissan Patrol</h3>
+                    <p>La puissance brute. Rien ne résiste au légendaire Patrol.</p>
+                    <span class="price">75€ / Jour</span>
+                    <button class="btn-select" onclick="openModal('Nissan Patrol')">Réserver</button>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1622316491079-43c3a9f02905?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="car-info">
+                    <h3>Toyota Land Cruiser</h3>
+                    <p>Le roi du désert. Fiabilité absolue pour les longs trajets.</p>
+                    <span class="price">90€ / Jour</span>
+                    <button class="btn-select" onclick="openModal('Toyota Land Cruiser')">Réserver</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contactez-nous</h2>
+        <form id="contactForm" class="contact-form">
+            <input type="text" placeholder="Votre Nom" required>
+            <input type="email" placeholder="Email" required>
+            <select id="selectedCar">
+                <option value="">Choisir un véhicule</option>
+                <option value="Galloper">Hyundai Galloper</option>
+                <option value="Pajero">Mitsubishi Pajero</option>
+                <option value="Patrol">Nissan Patrol</option>
+                <option value="LandCruiser">Toyota Land Cruiser</option>
+            </select>
+            <textarea placeholder="Votre message ou dates de réservation"></textarea>
+            <button type="submit" class="btn">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TerraDrive Location. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
